@@ -1,0 +1,188 @@
+{
+  "tickets": [
+    {
+      "id": "9c27d66d-0915-42d5-b16e-c96de7eacb1e",
+      "key": "ITACCESS-1",
+      "fields": {
+        "summary": "[Access Review] alice.nguyen@acme.example → Finance-Reports (high)",
+        "description": "User message: 'I need access to my company directory for the financial data'\n\nRequester: alice.nguyen@acme.example\nResource: Finance-Reports\nRisk tier: high\nAction requested: grant\nJustification: (none)\nUrgency: normal\n\nKnowledge Agent recommendation:\n  decision: needs_review\n  rationale: The request is for access to the Finance-Reports group, which is classified as High risk. The policy does not provide sufficient information to auto-approve or deny the request without further review, as there is no justification provided and the requester's department is not specified. High risk resources require careful consideration and typically involve additional scrutiny.\n  citations: group_catalog.md § Finance-Reports\n\nRouting: cfo@acme.example (priority P3, SLA 8h)",
+        "assignee": {
+          "emailAddress": "cfo@acme.example"
+        },
+        "priority": {
+          "name": "P3"
+        },
+        "labels": [
+          "access-request",
+          "auto-routed",
+          "high"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:00:47.137922+00:00"
+      }
+    },
+    {
+      "id": "0b3acf1e-85ab-4813-af3a-34f2b1d5a2ea",
+      "key": "ITACCESS-2",
+      "fields": {
+        "summary": "[Auto-Granted] alice.nguyen@acme.example → Marketing-Public",
+        "description": "Auto-approved by the Workflow Agent.\n\nRequester: alice.nguyen@acme.example\nGroup: Marketing-Public\nRisk tier: low\nJustification: starting a campaign\nKnowledge rationale: The request is for access to the Marketing-Public group, which is classified as Low risk tier and is accessible to all employees. The policy clearly allows access to this group for all employees, including the requester, Alice Nguyen.\nCitations: group_catalog.md § Marketing-Public\nNo expiry (low-risk).\n",
+        "assignee": {
+          "emailAddress": "it-helpdesk@acme.example"
+        },
+        "priority": {
+          "name": "P4"
+        },
+        "labels": [
+          "access-request",
+          "auto-approved",
+          "low"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:01:56.788872+00:00"
+      }
+    },
+    {
+      "id": "5a90c381-c560-411e-b8ca-2e1ca9d38f86",
+      "key": "ITACCESS-3",
+      "fields": {
+        "summary": "[Access Review] alice.nguyen@acme.example → Engineering-Secrets (high)",
+        "description": "User message: \"I need Engineering-Secrets again for the deploy I'm working on.\"\n\nRequester: alice.nguyen@acme.example\nResource: Engineering-Secrets\nRisk tier: high\nAction requested: grant\nJustification: for the deploy I'm working on\nUrgency: normal\n\nKnowledge Agent recommendation:\n  decision: needs_review\n  rationale: The request is for access to the 'Engineering-Secrets' group, which is classified as a High risk tier resource. The policy specifies that this group is highly restricted and tagged as 'employees-only'. The requester's eligibility based on department or employment status is not provided, necessitating further review to ensure compliance with access restrictions (group_catalog.md § Engineering-Secrets).\n  citations: group_catalog.md § Engineering-Secrets\n\nRouting: ciso@acme.example (priority P3, SLA 8h)",
+        "assignee": {
+          "emailAddress": "ciso@acme.example"
+        },
+        "priority": {
+          "name": "P3"
+        },
+        "labels": [
+          "access-request",
+          "auto-routed",
+          "high"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:02:36.421137+00:00"
+      }
+    },
+    {
+      "id": "3a4af5d1-0cf3-45a3-a9d4-cfd582e2a8a3",
+      "key": "ITACCESS-4",
+      "fields": {
+        "summary": "[Access Review] evan.park@acme.example → Engineering-Source (medium)",
+        "description": "User message: 'I need access to our engeering directory'\n\nRequester: evan.park@acme.example\nResource: Engineering-Source\nRisk tier: medium\nAction requested: grant\nJustification: (none)\nUrgency: normal\n\nKnowledge Agent recommendation:\n  decision: needs_review\n  rationale: The request is for access to the Engineering-Source group, which is classified as Medium risk. The policy does not provide sufficient information to auto-approve this request, as it lacks details on the requester's department and whether they meet the allowed department criteria (Engineering, Security).\n  citations: group_catalog.md § Engineering-Source\n\nRouting: diane.klein@acme.example (priority P3, SLA 8h)",
+        "assignee": {
+          "emailAddress": "diane.klein@acme.example"
+        },
+        "priority": {
+          "name": "P3"
+        },
+        "labels": [
+          "access-request",
+          "auto-routed",
+          "medium"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:05:40.958346+00:00"
+      }
+    },
+    {
+      "id": "265f818a-4eee-4fc2-bf4d-a222f3e340e4",
+      "key": "ITACCESS-5",
+      "fields": {
+        "summary": "[Auto-Granted] evan.park@acme.example → Marketing-Public",
+        "description": "Auto-approved by the Workflow Agent.\n\nRequester: evan.park@acme.example\nGroup: Marketing-Public\nRisk tier: low\nJustification: starting a campaign\nKnowledge rationale: The request is for access to the 'Marketing-Public' group, which is classified as a Low risk tier resource. The policy explicitly states that all employees are allowed access to this group (group_catalog.md § Marketing-Public).\nCitations: group_catalog.md § Marketing-Public\nNo expiry (low-risk).\n",
+        "assignee": {
+          "emailAddress": "it-helpdesk@acme.example"
+        },
+        "priority": {
+          "name": "P4"
+        },
+        "labels": [
+          "access-request",
+          "auto-approved",
+          "low"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:06:11.649776+00:00"
+      }
+    },
+    {
+      "id": "b0b65708-5759-460f-b77d-39eef53bc75e",
+      "key": "ITACCESS-6",
+      "fields": {
+        "summary": "[Auto-Granted] diane.klein@acme.example → Marketing-Public",
+        "description": "Auto-approved by the Workflow Agent.\n\nRequester: diane.klein@acme.example\nGroup: Marketing-Public\nRisk tier: low\nJustification: starting a campaign\nKnowledge rationale: The request is for access to the Marketing-Public group, which is classified as a Low risk tier resource. The policy explicitly states that all employees are allowed access to this group (group_catalog.md § Marketing-Public).\nCitations: group_catalog.md § Marketing-Public\nNo expiry (low-risk).\n",
+        "assignee": {
+          "emailAddress": "it-helpdesk@acme.example"
+        },
+        "priority": {
+          "name": "P4"
+        },
+        "labels": [
+          "access-request",
+          "auto-approved",
+          "low"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:08:20.965993+00:00"
+      }
+    },
+    {
+      "id": "b90f6332-e0da-48a6-b47c-ccd85598c141",
+      "key": "ITACCESS-7",
+      "fields": {
+        "summary": "[Auto-Granted] diane.klein@acme.example → Marketing-Public",
+        "description": "Auto-approved by the Workflow Agent.\n\nRequester: diane.klein@acme.example\nGroup: Marketing-Public\nRisk tier: low\nJustification: starting a campaign\nKnowledge rationale: The request is for access to the Marketing-Public group, which is classified as a Low risk tier resource. The policy explicitly states that all employees are allowed access to this group (group_catalog.md § Marketing-Public).\nCitations: group_catalog.md § Marketing-Public\nNo expiry (low-risk).\n",
+        "assignee": {
+          "emailAddress": "it-helpdesk@acme.example"
+        },
+        "priority": {
+          "name": "P4"
+        },
+        "labels": [
+          "access-request",
+          "auto-approved",
+          "low"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:08:26.803767+00:00"
+      }
+    },
+    {
+      "id": "fc68523f-5b98-4558-a319-c9133f7e30fb",
+      "key": "ITACCESS-8",
+      "fields": {
+        "summary": "[Access Review] diane.klein@acme.example → Engineering-Secrets (high)",
+        "description": "User message: \"I need Engineering-Secrets again for the deploy I'm working on.\"\n\nRequester: diane.klein@acme.example\nResource: Engineering-Secrets\nRisk tier: high\nAction requested: grant\nJustification: for the deploy I'm working on\nUrgency: normal\n\nKnowledge Agent recommendation:\n  decision: needs_review\n  rationale: The request is for access to the 'Engineering-Secrets' group, which is classified as a High risk tier resource. The policy specifies that this group is highly restricted and tagged as 'employees-only'. The requester, Diane Klein, is not identified as a contractor in the request context, but the high risk tier and restricted nature of the group necessitate a review. Additionally, the allowed departments do not include Engineering, which may require further verification of the requester's department.\n  citations: group_catalog.md § Engineering-Secrets, faq.md § I'm a contractor and need to see internal contracts. What now?\n\nRouting: compliance@acme.example (priority P3, SLA 8h)",
+        "assignee": {
+          "emailAddress": "compliance@acme.example"
+        },
+        "priority": {
+          "name": "P3"
+        },
+        "labels": [
+          "access-request",
+          "auto-routed",
+          "high"
+        ],
+        "status": {
+          "name": "Open"
+        },
+        "created": "2026-04-28T22:08:43.401752+00:00"
+      }
+    }
+  ]
+}
